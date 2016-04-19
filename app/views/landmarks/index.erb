@@ -1,0 +1,10 @@
+<h2>NYC Famous Landmarks</h2>
+<% @landmarks.each do |landmark| %>
+  <a href="/landmarks/<%=landmark.id%>"><%=landmark.name%></a> (<%=landmark.year_completed%>)<br>
+<% end %>
+
+<br>
+
+<form action="/landmarks/new" method="GET">
+  <input type="submit" value="Create New Landmark">
+</form>

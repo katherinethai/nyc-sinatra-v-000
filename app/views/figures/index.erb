@@ -1,0 +1,11 @@
+<h2>NYC Famous Figures</h2>
+
+<% @figures.each do |figure| %>
+  <a href="/figures/<%=figure.id%>"><%=figure.name%></a><br>
+<% end %>
+
+<br>
+
+<form action="/figures/new" method="GET">
+  <input type="submit" value="Create New Figure">
+</form>
